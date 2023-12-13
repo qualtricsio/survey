@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Redirect</title>
+    <script>
+        // JavaScript code goes here
+        function redirectToRandomLink() {
+            var urls = [
+                'https://nyu.qualtrics.com/jfe/form/SV_bDRkMQEoWIMdToi', // Replace with your first link
+                'https://nyu.qualtrics.com/jfe/form/SV_8dIGn4a7zPq8J5I'  // Replace with your second link
+            ];
+
+            var randomIndex = Math.floor(Math.random() * urls.length);
+            window.location.href = urls[randomIndex];
+        }
+    </script>
+</head>
+<body>
+    <script>
+        // Call the function to redirect
+        redirectToRandomLink();
+    </script>
+</body>
+</html>
